@@ -6,4 +6,6 @@
 [edit]
 {{ if eq .chezmoi.os "linux" }}
     command = 'nano'
+{{ else if eq .chezmoi.os "windows" }}
+    command = 'code'
 {{ end }}

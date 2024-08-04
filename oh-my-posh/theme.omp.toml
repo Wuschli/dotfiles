@@ -79,3 +79,7 @@ version = 2
     Text = ''
     Duration = 0
     NameLength = 0
+
+[transient_prompt]
+  background = 'transparent'
+  template = '➜ '
