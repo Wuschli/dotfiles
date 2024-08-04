@@ -1,2 +1,4 @@
 [cd]
+{{ if eq .chezmoi.os "windows" }}
     command = 'pwsh'
+{{ end }}
