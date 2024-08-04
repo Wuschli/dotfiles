@@ -2,3 +2,8 @@
 {{ if eq .chezmoi.os "windows" }}
     command = 'pwsh'
 {{ end }}
+
+[edit]
+{{ if eq .chezmoi.os "linux" }}
+    command = 'nano'
+{{ end }}
