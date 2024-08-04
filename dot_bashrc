@@ -24,4 +24,4 @@ export NVM_DIR="$HOME/.nvm"
 
 alias docker-compose='docker compose'
 
-eval "$(oh-my-posh init bash)"
+eval "$(oh-my-posh init bash --config ~/oh-my-posh/theme.omp.toml)"
