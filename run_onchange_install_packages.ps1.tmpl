@@ -9,7 +9,8 @@ if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
   }
 }
 
-choco install gsudo
-choco install oh-my-posh
-exit
+choco install -y gsudo
+choco install -y oh-my-posh
+choco install -y fzf
+choco install -y bat
 {{ end }}
