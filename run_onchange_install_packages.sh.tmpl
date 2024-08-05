@@ -1,10 +1,15 @@
 {{ if (eq .chezmoi.os "linux") }}
 #! /bin/bash
 
+if ! command -v brew &> /dev/null
+then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
 if ! command -v oh-my-posh &> /dev/null
 then
     curl -s https://ohmyposh.dev/install.sh | bash -s
 fi
 
-sudo apt install -y fzf bat
+brew install fzf bat
 {{ end }}
