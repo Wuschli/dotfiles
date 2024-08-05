@@ -1,6 +1,11 @@
 {{ if eq .chezmoi.os "linux" }}
 #! /bin/bash
-curl -s https://ohmyposh.dev/install.sh | bash -s
+
+if ! command -v oh-my-posh &> /dev/null
+then
+    curl -s https://ohmyposh.dev/install.sh | bash -s
+fi
+
 sudo apt install -y fzf
 sudo apt install -y bat
 {{ end }}
