@@ -12,7 +12,7 @@ SAVEHIST=1000
 
 export GOPATH=~/go
 export GOBIN=$GOPATH/bin
-export PATH=~/bin:$GOBIN:$PATH
+export PATH=~/bin:~/.local/bin:$GOBIN:$PATH
 
 # init oh my posh
 eval "$(oh-my-posh init zsh --config ~/oh-my-posh/theme.omp.yaml)"
@@ -59,4 +59,4 @@ export EDITOR='nano'
 export VISUAL='code'
 
 #must be at end of .zshrc
-source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
