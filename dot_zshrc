@@ -51,3 +51,6 @@ alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time
 
 export EDITOR='nano'
 export VISUAL='code'
+
+#must be at end of .zshrc
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
