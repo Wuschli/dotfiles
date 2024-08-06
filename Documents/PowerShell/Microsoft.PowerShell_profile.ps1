@@ -6,7 +6,7 @@ function Do-Bat ($file){
 }
 
 function Do-Ls {
-    eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions
+    eza --color=always --icons=always
 }
 
 Set-Alias -Name cm -Value chezmoi
