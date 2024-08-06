@@ -10,7 +10,9 @@ HISTSIZE=1000
 SAVEHIST=1000
 # End of lines configured by zsh-newuser-install
 
-export PATH=~/bin:$PATH
+export GOPATH=~/go
+export GOBIN=$GOPATH/bin
+export PATH=~/bin:$GOBIN:$PATH
 
 # init oh my posh
 eval "$(oh-my-posh init zsh --config ~/oh-my-posh/theme.omp.yaml)"
