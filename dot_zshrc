@@ -48,3 +48,6 @@ bindkey '^[[3;5~' kill-word
 alias cm="chezmoi"
 alias cat="bat --color=always"
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+
+export EDITOR='nano'
+export VISUAL='code'
