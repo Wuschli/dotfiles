@@ -20,7 +20,9 @@ then
     chsh -s $(which zsh)
 fi
 
-brew install fzf bat eza zsh-syntax-highlighting
-
+if command -v brew &> /dev/null
+then
+    brew install fzf bat eza zsh-syntax-highlighting
+fi
 
 {{ end }}
