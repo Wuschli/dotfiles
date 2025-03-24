@@ -24,13 +24,24 @@ export NVM_DIR="$HOME/.nvm"
 
 alias docker-compose='docker compose'
 alias cm="chezmoi"
-alias cat="bat --color=always"
+
+if command -v bat &> /dev/null
+then
+	alias cat="bat --color=always"
+fi
 
 # init oh my posh
 eval "$(oh-my-posh init bash --config ~/oh-my-posh/theme.omp.yaml)"
 
+
 # Set up fzf key bindings and fuzzy completion
-eval "$(fzf --bash)"
+if command -v fzf &> /dev/null
+then
+	eval "$(fzf --bash)"
+fi
 
 # Set up homebrew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+if command -v brew &> /dev/null
+then
+	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
