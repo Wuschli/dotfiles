@@ -1,0 +1,29 @@
+[Desktop Entry]
+DefaultProfile=default.profile
+
+[General]
+ConfigVersion=1
+
+[MainWindow][Toolbar mainToolBar]
+IconSize=16
+ToolButtonStyle=IconOnly
+
+[MainWindow][Toolbar sessionToolbar]
+IconSize=16
+ToolButtonStyle=IconOnly
+
+[TabBar]
+CloseTabOnMiddleMouseButton=true
+SearchTabsButton=HideSearchTabsButton
+TabBarVisibility=AlwaysShowTabBar
+
+[Toolbar mainToolBar]
+IconSize=16
+ToolButtonStyle=IconOnly
+
+[Toolbar sessionToolbar]
+IconSize=16
+ToolButtonStyle=IconOnly
+
+[UiSettings]
+ColorScheme=
