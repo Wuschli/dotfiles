@@ -1,0 +1,17 @@
+touchpad:
+  gestures:
+    - type: swipe
+      direction: right
+      fingers: 3
+
+      actions:
+        - input:
+          - mouse: [ forward ]
+
+    - type: swipe
+      direction: left
+      fingers: 3
+
+      actions:
+        - input:
+          - mouse: [ back ]
