@@ -45,3 +45,6 @@ if command -v brew &> /dev/null
 then
 	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
+
+# Pass #
+export PASSWORD_STORE_ENABLE_EXTENSIONS=true
