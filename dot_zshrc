@@ -47,6 +47,9 @@ _fzf_comprun() {
 #export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 #[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
+# pass
+export PASSWORD_STORE_ENABLE_EXTENSIONS=true
+
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 bindkey '^H' backward-kill-word
