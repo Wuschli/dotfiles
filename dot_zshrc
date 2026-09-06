@@ -66,3 +66,5 @@ export TERM=xterm-256color
 
 #must be at end of .zshrc
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH="/home/lukas/.gdvm/bin/current_godot:/home/lukas/.gdvm/bin:$PATH"
+command -v gdvm >/dev/null 2>&1 && command -v compdef >/dev/null 2>&1 && eval "$(gdvm completions zsh)"
