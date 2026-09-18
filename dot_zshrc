@@ -10,9 +10,13 @@ HISTSIZE=1000
 SAVEHIST=1000
 # End of lines configured by zsh-newuser-install
 
+#go
 export GOPATH=~/go
 export GOBIN=$GOPATH/bin
 export PATH=~/bin:~/.local/bin:$GOBIN:$PATH
+
+#flutter
+export PATH=$HOME/tools/flutter/bin:$PATH
 
 # init oh my posh
 eval "$(oh-my-posh init zsh --config ~/oh-my-posh/theme.omp.yaml)"
